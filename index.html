@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+    <div class="row" id="row-1">
+        <div class="col-md-12">
+            <strong><h1>Weather Dashboard</h1></strong>
+        </div>  
+    </div>
+    <br>
+    <div class="container">
+    <div class="row" id="row-1">
+        <div class="col-md-4">
+            <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        </div>
+    </div>
+    
+        <div class="row" id="row-2">
+            <div class="col-md-4" id="left-col">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="city-button" id="v-pills-Austin-tab" data-toggle="pill" href="#v-pills-Austin" role="tab" aria-controls="v-pills-Austin" aria-selected="false">Austin</button>
+                <button class="city-button" id="v-pills-Chicago-tab" data-toggle="pill" href="#v-pills-Chicago" role="tab" aria-controls="v-pills-Chicago" aria-selected="false">Chicago</button>
+                <button class="city-button" id="v-pills-New-York-tab" data-toggle="pill" href="#v-pills-New-York" role="tab" aria-controls="v-pills-New-York" aria-selected="false">New York</button>
+                <button class="city-button" id="v-pills-Orlando-tab" data-toggle="pill" href="#v-pills-Orlando" role="tab" aria-controls="v-pills-Orlando" aria-selected="false">Orlando</button>
+                <button class="city-button" id="v-pills-San-Francisco-tab" data-toggle="pill" href="#v-pills-San-Francisco" role="tab" aria-controls="v-pills-San-Francisco" aria-selected="false">San Francisco</button>
+                <button class="city-button" id="v-pills-Seattle-tab" data-toggle="pill" href="#v-pills-Seattle" role="tab" aria-controls="v-pills-Seattle" aria-selected="false">Seattle</button>
+                <button class="city-button" id="v-pills-Denver-tab" data-toggle="pill" href="#v-pills-Denver" role="tab" aria-controls="v-pills-Denver" aria-selected="false">Denver</button>
+                <button class="city-button" id="v-pills-Atlanta-tab" data-toggle="pill" href="#v-pills-Atlanta" role="tab" aria-controls="v-pills-Atlanta" aria-selected="false">Atlanta</button>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-Austin" role="tabpanel" aria-labelledby="v-pills-Austin-tab">
+                    <div id="austin-info">
+                        <h3><span id="city-name">Austin</span></h3>
+                        <h6>Temperature: <span id="temperature"></span> F</h6>
+                        <h6>Humidity: <span id="humidity"></span> %</h6>
+                        <h6>Wind: <span id="wind"></span> MPH</h6>
+                        <h6>UV Index: <span id="uv"></span></h6>
+                     </div>
+                     <div id="5-day-view">
+                        Hello World
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-Chicago" role="tabpanel" aria-labelledby="v-pills-Chicago-tab">
+                    <div id="chi-info">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-New-York" role="tabpanel" aria-labelledby="v-pills-New-York-tab">
+                    <div id="nyc-info">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-Orlando" role="tabpanel" aria-labelledby="v-pills-Orlando-tab">
+                     <div id="orlando-info">
+
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-San-Francisco" role="tabpanel" aria-labelledby="v-pills-San-Francisco-tab">
+                     <div id="sf-info">
+
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-Seattle" role="tabpanel" aria-labelledby="v-pills-Seattle-tab">
+                    <div id="seattle-info">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-Denver" role="tabpanel" aria-labelledby="v-pills-Denver-tab">
+                    <div id="denver-info">
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-Atlanta" role="tabpanel" aria-labelledby="v-pills-Atlanta-tab">
+                    <div id="atlanta-info">
+
+                     </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+    <footer>
+        Made with sweat and tears.
+
+    </footer>
+
+<script type="text/javascript">
+var key = "7e2757c8a7f819ab99a419d416157664"
+var url = ""
+
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>
