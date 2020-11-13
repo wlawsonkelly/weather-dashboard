@@ -32,8 +32,16 @@ footer{
     border-radius: 10%;
     color: white;
     padding: 10px;
-    width: 135%;
+  
 }
+
+.dayCard{
+    float: left;
+    margin-left: 10px;
+    width: 18%;
+}
+
+
 
 
 /* ids */
